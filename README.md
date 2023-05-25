@@ -6,7 +6,7 @@ This tool is used to generate policies from a Terraform plan.
 ## Install
 
 ```
-pip install git+https://github.com/crowdsecurity/terraform-policies_generator
+pip install git+https://github.com/crowdsecurity/tf_policies_generator
 ```
 
 ## Usage
