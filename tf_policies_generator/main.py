@@ -4,9 +4,9 @@ import re
 
 # init arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("--file", "-f", help="Terraform plan file")
-parser.add_argument("--aws-account", default="${local.env.aws_account}", help="AWS account id")
-parser.add_argument("--aws-region", default="${local.env.aws_region}", help="AWS region")
+parser.add_argument("--file", "-f", help="Terraform plan file", required=True)
+parser.add_argument("--aws-account", default="${local.env.aws_account}", help="AWS account id (default: ${local.env.aws_account})")
+parser.add_argument("--aws-region", default="${local.env.aws_region}", help="AWS region (default: ${local.env.aws_region})")
 parser.add_argument("--output", "-o", default="policies.tf.json", help="Output file (default: policies.json)")
 args = parser.parse_args()
 
