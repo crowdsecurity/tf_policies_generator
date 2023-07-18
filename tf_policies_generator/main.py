@@ -150,6 +150,7 @@ class PoliciesGenerator:
                 self.policies.append({
                     "effect": "Allow",
                     "actions": [
+                        f"{service}:TagLogGroup",
                         f"{service}:UntagLogGroup",
                     ],
                     "resources": [x + ":log-stream:*" for x in  arn_list],
