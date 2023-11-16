@@ -1,7 +1,9 @@
 
 # Terraform Policies generator
 
-This tool is used to generate policies from a Terraform plan.
+This tool generates policies from a Terraform plan for Continuous Deployment using OIDC.
+
+Related [blog post](https://www.crowdsec.net/blog/a-guide-to-continuous-deployment)
 
 ## Install
 
