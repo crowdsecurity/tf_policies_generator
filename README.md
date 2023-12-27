@@ -16,5 +16,5 @@ pip install git+https://github.com/crowdsecurity/tf_policies_generator
 ```
 terraform plan -out plan.out
 terraform show -no-color -json plan.out > output.json
-policies_generator -f output.json
+tf_policies_generator -f output.json
 ```
